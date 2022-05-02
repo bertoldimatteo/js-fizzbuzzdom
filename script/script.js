@@ -9,3 +9,12 @@
 // Applica uno stile differente a seconda del valore dell'indice per i multipli di 3, per i multipli di 5 
 // e per i valori che sono sia multipli di 3 che di 5.
 
+const list = document.querySelector(".fizzList");
+
+for ( let count = 0; count <= 100; count++) {
+    const element = document.createElement("li");
+
+    element.classList.add("list");
+    element.innerHTML = count;
+    list.append(element);
+}
