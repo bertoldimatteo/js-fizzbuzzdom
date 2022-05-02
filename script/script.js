@@ -13,8 +13,22 @@ const list = document.querySelector(".fizzList");
 
 for ( let count = 0; count <= 100; count++) {
     const element = document.createElement("li");
-
     element.classList.add("list");
+    element.classList.add("fizzListBC")
     element.innerHTML = count;
     list.append(element);
+
+    if ( count % 3 === 0 && count % 5 === 0) {
+        element.innerHTML = "FizzBuzz";
+        element.classList.remove("fizzListBC")
+        element.classList.add("fizzbuzz");
+    } else if ( count % 3 === 0) {
+        element.innerHTML = "Fizz";
+        element.classList.remove("fizzListBC")
+        element.classList.add("fizz");
+    } else if ( count % 5 === 0) {
+        element.innerHTML = "Buzz";
+        element.classList.remove("fizzListBC")
+        element.classList.add("buzz");
+    }
 }

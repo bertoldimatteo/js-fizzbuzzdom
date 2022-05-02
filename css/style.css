@@ -15,8 +15,19 @@
     list-style-type: none;
     width: 100px;
     height: 100px;
-    background-color: aqua;
     line-height: 100px;
     text-align: center;
     border: 2px solid #fff;
+}
+.fizzListBC {
+    background-color: aqua;
+}
+.fizz {
+    background-color: bisque;
+}
+.buzz {
+    background-color: salmon;
+}
+.fizzbuzz {
+    background-color: darkcyan;
 }
